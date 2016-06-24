@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Barcode</name>
+    </assembly>
+    <members>
+        <member name="T:GR.CMSOFT.BARCODE.Barcode">
+            <summary>
+            Barcode Abstract Class
+            </summary>
+        </member>
+        <member name="T:GR.CMSOFT.BARCODE.Barcode.BARCODE_TYPES">
+            <summary>
+            Barcode types enum 
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.BARCODE_TYPES.CODE_39">
+            <summary>
+            1: Code 39
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.BarcodeHeight">
+            <summary>
+            Barcode Height
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.isTextValid">
+            <summary>
+            Input Text Validation according to Barcode type
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Text_Visible">
+            <summary>
+            Input text visible at the bottom of the barcode
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Text_Font">
+            <summary>
+            Text font
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Text_Color">
+            <summary>
+            Text color
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Border_Visible">
+            <summary>
+            Add border to output image
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Border_Padding">
+            <summary>
+            Border padding from barcode
+            </summary>
+        </member>
+        <member name="F:GR.CMSOFT.BARCODE.Barcode.Border_Color">
+            <summary>
+            Border color
+            </summary>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Barcode.#ctor(System.String)">
+            <summary>
+            Barcode Abstract Constructor
+            </summary>
+            <param name="text">Input text</param>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Barcode.#ctor(System.String,System.Int32,System.Boolean,System.Drawing.Font,System.Drawing.Brush,System.Boolean,System.Drawing.Color,System.Int32)">
+            <summary>
+            Barcode Abstract Constructor
+            </summary>
+            <param name="text">Input Text</param>
+            <param name="barcodeHeight">Barcode Height</param>
+            <param name="textVisible">Text visisble at the bottom of the barcode</param>
+            <param name="textFont">Text Font</param>
+            <param name="textColor">Text color</param>
+            <param name="borderVisible">Image border visible</param>
+            <param name="borderColor">Image border color</param>
+            <param name="borderPadding">Image border padding drom barcode</param>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Barcode.createBarcode">
+            <summary>
+            Abstract Method - Generate Barcode Image
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Barcode.validateText">
+            <summary>
+            Abstract Method - Validate Input Text
+            </summary>
+        </member>
+        <member name="T:GR.CMSOFT.BARCODE.Code_39">
+            <summary>
+            Barcode Type: Code 39
+            </summary>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Code_39.#ctor(System.String)">
+            <summary>
+            Code 39 Constructor
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Code_39.#ctor(System.String,System.Int32,System.Boolean,System.Drawing.Font,System.Drawing.Brush,System.Boolean,System.Drawing.Color,System.Int32)">
+            <summary>
+            Code 39 Constructor
+            </summary>
+            <param name="text">Input Text</param>
+            <param name="barcodeHeight">Barcode Height</param>
+            <param name="textVisible">Text visisble at the bottom of the barcode</param>
+            <param name="textFont">Text Font</param>
+            <param name="textColor">Text color</param>
+            <param name="borderVisible">Image border visible</param>
+            <param name="borderColor">Image border color</param>
+            <param name="borderPadding">Image border padding drom barcode</param>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Code_39.createBarcode">
+            <summary>
+            Generate Code 39 Image
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GR.CMSOFT.BARCODE.Code_39.validateText">
+            <summary>
+            Validate Input Text according to Code 39
+            </summary>
+        </member>
+    </members>
+</doc>
